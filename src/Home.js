@@ -34,7 +34,7 @@ export default function Home() {
 
     }
     function checkotp() {
-        // axios.post("https://otpverification-back.onrender.com/verify", { otp ,cotp});
+         axios.post("https://otpverification-back.onrender.com/verify", { otp ,cotp});
         if (otp == "") {
             alert("Enter The OTP!")
 
