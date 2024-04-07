@@ -27,14 +27,14 @@ export default function Home() {
 
 
             }, 1000);
-            axios.post("http://localhost:8080/otp", { otp, email });
+            axios.post("https://otpverification-back.onrender.com/otp", { otp, email });
             alert("OTP Sent Successfully !")
         }
 
 
     }
     function checkotp() {
-        // axios.post("http://localhost:8080/verify", { otp ,cotp});
+        // axios.post("https://otpverification-back.onrender.com/verify", { otp ,cotp});
         if (otp == "") {
             alert("Enter The OTP!")
 
