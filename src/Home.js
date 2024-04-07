@@ -34,12 +34,12 @@ export default function Home() {
 
     }
     function checkotp() {
-         axios.post("https://otpverification-back.onrender.com/verify", { otp ,cotp});
+         
         if (otp == "") {
             alert("Enter The OTP!")
 
         } else {
-            axios.post("http://localhost:8080/verify", { otp, email }).then((res) => {
+            axios.post("https://otpverification-back.onrender.com/verify", { otp, email }).then((res) => {
                 if (res.data.mess == 'Verifiy') {
                     alert("OTP Verifiy SuccessFully !")
 
